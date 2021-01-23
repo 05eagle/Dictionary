@@ -27,15 +27,15 @@ namespace Dictionary
 
             for (int i = 0; i < tempKey.Length; i++)
             {
-                keys[i] = tempKey[i];
+                for (int j = 0; j < tempValue.Length; j++)
+                {
+                    keys[i] = tempKey[i];
+                    values[i] = tempValue[i];
+                }
+               
             }
 
             keys[keys.Length -1] = key;
-
-            for (int i = 0; i < tempValue.Length; i++)
-            {
-                values[i] = tempValue[i];
-            }
 
             values[values.Length - 1] = value;
         }
